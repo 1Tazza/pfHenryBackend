@@ -4,8 +4,8 @@ const { User, Review, Payment, Order, Cart, Videogame, OrdersDetail } = require(
 const { mailer, generateSaleTemplate } = require("../services/mailService");
 const { generateOrder, approveOrder, rejectOrder } = require("./orders.controllers");
 
-const DATABASE = "http://localhost:3001"
-const FRONT_DEPLOY = "http://localhost:3000"
+const DATABASE = "https://pfservidor-production-9d59.up.railway.app"
+const FRONT_DEPLOY = "https://pf-henry-front-i3rir19m3-1tazza.vercel.app"
 
 mercadopago.configure({
   access_token: process.env.ACCESS_TOKEN,
