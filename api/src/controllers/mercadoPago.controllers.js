@@ -5,7 +5,7 @@ const { mailer, generateSaleTemplate } = require("../services/mailService");
 const { generateOrder, approveOrder, rejectOrder } = require("./orders.controllers");
 
 const DATABASE = "https://pfservidor-production-9d59.up.railway.app"
-const FRONT_DEPLOY = "https://pf-henry-front-i3rir19m3-1tazza.vercel.app"
+const FRONT_DEPLOY = "https://pf-henry-front-1tazza.vercel.app"
 
 mercadopago.configure({
   access_token: process.env.ACCESS_TOKEN,
